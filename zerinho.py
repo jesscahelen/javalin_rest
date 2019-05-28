@@ -1,11 +1,19 @@
-A, B, C = [int(value) for value in input().split()]
+f = open("entrada.txt", "r")
+l = f.readline()
 
+A, B, C = [int(l) for l in l.split()]
+r = ""
 if A==B and A==C:
-    print("*")
+    r = "*\n"
 elif A==B and A!=C:
-    print("C")
+    r = "C\n"
 elif C==B and C!=A:
-    print("A")
+    r = "A\n"
 elif A==C and A!=B:
-    print("B")
+    r = "B\n"
 
+f.close()
+f = open("saida.txt", "w")
+
+f.write(r)
+f.close()

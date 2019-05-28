@@ -1,7 +1,12 @@
-N, R = [int(value) for value in input().split()]
+f = open("entrada.txt", "r")
+
+l = f.readline()
+N, R = [int(l) for l in l.split()]
+
+l = f.readline()
 
 #voltaram
-s = [int(value) for value in input().split()]
+s = [int(l) for l in l.split()]
 
 #nao voltaram
 n = []
@@ -16,7 +21,11 @@ if N != R:
             n.append(c)
 else:
     n.append("*")
-print(' '.join('{}'.format(k) for k in n) + ' ')
+
+f.close()
+f = open("saida.txt", "w")
+
+f.write(' '.join('{}'.format(k) for k in n) + ' ')
 
 
 
