@@ -17,8 +17,8 @@ public class Banco {
 	//decoda texto em base64 
 	public static String decoder(String texto) {
 
-        String textoDeco = new String(Base64.getDecoder().decode(texto));
-        return textoDeco;
+		String textoDeco = new String(Base64.getDecoder().decode(texto));
+		return textoDeco;
 
 	}
 	
