@@ -13,7 +13,6 @@ public class Banco {
 	
 	public static Arquivo arquivo;	
 	public static List<Log> logs = new ArrayList<Log>();
-	public static Integer logCount = 1;
 	
 	//decoda texto em base64 
 	public static String decoder(String texto) {
