@@ -37,7 +37,7 @@ public class Banco {
 	public static List<Log> findByStatus(String status) {
 		List<Log> logsEncontrados = new ArrayList<>();
 		for (Log log : logs) {
-			if( log.getStatus() == status ) {
+			if(log.getStatus().equals(status)) {
 				logsEncontrados.add(log);
 			} 
 		}
