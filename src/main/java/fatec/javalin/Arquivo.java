@@ -10,7 +10,8 @@ public class Arquivo {
 	private String sourcecode;
 	
 	@JsonCreator
-	public Arquivo(@JsonProperty ("filename") String filename, @JsonProperty ("problem") String problem, @JsonProperty ("sourcecode") String sourcecode) {
+	public Arquivo(@JsonProperty ("filename") String filename, @JsonProperty ("problem") String problem, 
+		       @JsonProperty ("sourcecode") String sourcecode) {
 		this.filename = filename;
 		this.problem = problem;
 		this.sourcecode = sourcecode;
