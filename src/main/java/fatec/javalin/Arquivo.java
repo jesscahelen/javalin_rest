@@ -16,8 +16,6 @@ public class Arquivo {
 		this.sourcecode = sourcecode;
 	}
 	
-	
-	
 	public String getFilename() {
 		return filename;
 	}
